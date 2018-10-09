@@ -1,6 +1,14 @@
 FROM alpine
 
-RUN	apk add bash perl libstdc++ rsync libgomp \
+RUN	apt-get update && apt-get install -y \
+        apk \
+        add \
+        bash \
+        perl \
+        libstdc++ \
+        rsync \
+        libgomp \
+        dustmasker \
 &&	apk add build-base \
 &&	cd /tmp \
 &&	wget https://github.com/savytskanatalia/Kraken2.0.7-beta/raw/master/kraken2-2.0.7-beta.tar.gz \
