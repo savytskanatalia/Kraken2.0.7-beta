@@ -14,6 +14,6 @@ RUN	ln -s /opt/kraken2/kraken2-inspect /usr/local/bin/kraken2-inspect \
 RUN	cd / \
 RUN	rm -rf /tmp/* \
 RUN	apk del build-base
-RUN	
+
 LABEL	tool=kraken2 version=2.0.7-beta
 WORKDIR	/data
