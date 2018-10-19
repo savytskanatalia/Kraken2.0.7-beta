@@ -11,10 +11,6 @@ RUN	./install_kraken2.sh /opt/kraken2 \
 RUN	ln -s /opt/kraken2/kraken2 /usr/local/bin/kraken2 \
 RUN	ln -s /opt/kraken2/kraken2-build /usr/local/bin/kraken2-build \
 RUN	ln -s /opt/kraken2/kraken2-inspect /usr/local/bin/kraken2-inspect \
-RUN	cd .. \
-RUN	wget ftp://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/ncbi-blast-2.7.1+-x64-linux.tar.gz \
-RUN	tar -xvzf ncbi-blast-2.7.1+-x64-linux.tar.gz \
-RUN	mv ncbi-blast-2.7.1+-x64-linux /usr/local/bin/ncbi-blast
 RUN	cd / \
 RUN	rm -rf /tmp/* \
 RUN	apk del build-base
