@@ -9,5 +9,7 @@ The docker file does NOT include ncbi-blast+ installation, thus, while databases
 
 
 To run paired-end .fastq-s
+```
 
 kraken2 --db $YOUR_DB --paired --classified-out $NAME#.fastq --unclassified-out $NAME#.fastq --output $NAME.tsv --report  $NAME.tsv --use-names  --threads 30  $1.fastq $2.fastq
+```
